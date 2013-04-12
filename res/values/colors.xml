@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_focus">#7CCD7C</color>
+    <color name="bg_normal">#f9f9f9</color>
+    <color name="common_gray">#f0f0f0</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="dark_gray">#595959</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="textcolor_blue">#63B8FF</color>
+    <color name="dark_blue">#104E8B</color>
+    <color name="light_blue">#1E90FF</color>
+    <color name="category_bg">#9AC0CD</color>
+    <!--  -->
+    <color name="mode_green">#32CD32</color>
+    <color name="mode_red">#EE6A50</color>
+    <color name="mode_yellow">#FFC125</color>
+    <color name="mode_blue">#5CACEE</color>
+    <color name="mode_pink">#FFB5C5</color>
+    <color name="mode_gray">#DEDEDE</color>
+
+</resources>

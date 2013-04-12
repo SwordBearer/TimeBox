@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:key="enable"
+        android:persistent="false"
+        android:title="开启闹钟" />
+
+    <Preference
+        android:dependency="time"
+        android:key="time"
+        android:persistent="false"
+        android:title="时间" />
+
+    <xmu.swordbearer.timebox.alarm.RepeatPreference
+        android:key="repeat"
+        android:persistent="false"
+        android:title="重复" />
+
+    <xmu.swordbearer.timebox.alarm.RingPreference
+        android:key="ring"
+        android:persistent="false"
+        android:ringtoneType="all"
+        android:showDefault="true"
+        android:showSilent="true"
+        android:title="铃声" />
+
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="vibrate"
+        android:title="振动" />
+
+</PreferenceScreen>

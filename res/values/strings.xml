@@ -1,0 +1,110 @@
+<resources>
+
+    <string name="app_name">TimeBox</string>
+    <string name="str_exit_app">再按一次将退出程序</string>
+    <string name="login_by_renren">用人人帐号登录</string>
+    <string name="login_by_sina">用新浪微博登录</string>
+    <string name="login_by_qq">用QQ帐号登录</string>
+    <string name="login_by_google">用Google帐号登录</string>
+    <string name="login_register">注册账户</string>
+    <!--  -->
+    <string name="hint_account">请输入账户：</string>
+    <string name="hint_password">请输入密码：</string>
+    <string name="str_login">登录</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_snooze">推迟</string>
+    <string name="str_look_detail">查看详情</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_dismiss">取消</string>
+    <string name="str_back">返回</string>
+    <string name="str_exit">退出</string>
+    <string name="str_exit_confirm">确定要退出吗？</string>
+    <!--  -->
+    <string name="choose_login_port">选择登录方式</string>
+    <string name="auth_string">请登录</string>
+    <string name="auth_success">登陆成功</string>
+    <string name="auth_failed">登陆失败</string>
+    <!--  -->
+    <string name="str_delete">删除</string>
+    <string name="str_task_name">任务名称</string>
+    <string name="str_task_detail">任务详细</string>
+    <string name="str_task_plan">所属计划</string>
+    <string name="str_task_createtime">创建日期</string>
+    <!-- stop to do -->
+    <string name="str_stoptodo_name">名称</string>
+    <string name="str_stoptodo_detail">详细</string>
+    <!--  -->
+    <string name="str_choose_date">选择日期</string>
+    <!--  -->
+    <string name="str_enable_alarm">启用闹钟</string>
+    <string name="str_start_time">开始时间</string>
+    <string name="str_alarm_vibrate">振动</string>
+    <string name="str_alarm">提醒</string>
+    <string name="str_alarm_open">提醒 开</string>
+    <string name="str_alarm_close">提醒 关</string>
+    <string name="str_alarm_on">开</string>
+    <string name="str_alarm_off">关</string>
+    <string name="str_alarm_ring">铃声</string>
+    <string name="str_level">等级</string>
+    <string name="str_alarm_repeat">重复</string>
+    <string name="str_belong_plan">所属计划</string>
+    <string name="str_not_setup">未设置</string>
+    <string name="str_add_alarm">添加闹钟</string>
+    <!--  -->
+    <string name="str_name_empty">任务名称不能为空</string>
+    <string name="str_name_toolong">任务详细不能超过20个字</string>
+    <string name="str_detail_toolong">任务详细不能超过20个字</string>
+    <string name="str_save_task_failed">任务保存失败</string>
+    <!--  -->
+
+    <string name="str_logining">正在登录</string>
+    <string name="str_login_empty">用户名或密码不能为空</string>
+    <!--  -->
+    <string name="str_delete_confirm">此操作会永久删除任务，确定要这样做吗？</string>
+    <!--  -->
+    <string name="str_title_setup">个性设置</string>
+    <string name="str_title_tool">统计工具</string>
+    <string name="str_title_help">使用说明</string>
+    <!--  -->
+    <string name="str_title_newword">添加语录</string>
+    <string name="hint_word">输入语录(1~300字)</string>
+    <string name="str_word_toolong">语录长度须介于 1～300个字之间</string>
+    <!-- plan -->
+    <string name="str_title_newplan">添加计划</string>
+    <string name="str_plan_name">计划名称</string>
+    <string name="str_plan_detail">详细说明</string>
+    <string name="str_plan_createtime">创建日期</string>
+    <string name="str_planname_toolong">计划名称须介于 1～20个字之间</string>
+    <string name="str_plandetail_toolong">计划介绍须介于 1～300个字之间</string>
+    <string name="str_planstart_null">请指定计划的开始时间</string>
+    <string name="str_save_plan_fail">计划保存失败！！！</string>
+    <string name="str_save_plan_success">计划保存成功！！！</string>
+    <string name="str_choose_plan">选择计划</string>
+    <string name="str_add_task">添加任务</string>
+    <!--  -->
+    <string name="mood_green">清爽</string>
+    <string name="mood_red">激动</string>
+    <string name="mood_yellow">幸福</string>
+    <string name="mood_pink">爱恋</string>
+    <string name="mood_blue">孤独</string>
+    <string name="mood_gray">难过</string>
+    <string name="str_no_record">没有记录</string>
+    <string name="str_no_repeat">无重复</string>
+    <string name="str_every_day">"每天"</string>
+    <!--  -->
+    <string name="title_task_detail">详细任务</string>
+    <string name="title_plan_detail">详细计划</string>
+    <string name="str_delete_plan">删除计划</string>
+    <string name="str_delete_plan_msg">确定要删除此计划吗？计划所属的任务不会被删除</string>
+
+    <!-- setup -->
+    <string name="hint_note">点此输入笔记，自动保存</string>
+    <string name="delete_note_confirm">确定要删除这条笔记吗？</string>
+    <string name="delete_stoptodo_confirm">确定要删除这条记录吗？</string>
+    <!--  -->
+    <string name="previous_one">上一条</string>
+    <string name="next_one">下一条</string>
+    <!--  -->
+    <string name="str_account_manage">帐号管理</string>
+
+</resources>

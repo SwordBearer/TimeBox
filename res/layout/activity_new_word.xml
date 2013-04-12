@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newword_contentview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/newword_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/newword_btn_back"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newword_tv_date"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:contentDescription="@null"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/newword_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_color" />
+
+        <ImageButton
+            android:id="@+id/newword_btn_save"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_save" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newword_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newword_head"
+        android:layout_margin="4dp"
+        android:background="@drawable/shape_edittext_word_green"
+        android:gravity="top"
+        android:hint="@string/hint_word"
+        android:minLines="10"
+        android:padding="4dp" />
+
+</RelativeLayout>

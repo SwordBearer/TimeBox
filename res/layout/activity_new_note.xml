@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newword_contentview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/newnote_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/newnote_btn_back"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newnote_tv_date"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/newnote_btn_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_color" />
+
+        <ImageButton
+            android:id="@+id/newnote_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_save" />
+
+        <ImageButton
+            android:id="@+id/newnote_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_menu"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newnote_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/newnote_head"
+        android:autoLink="phone|web|email"
+        android:autoText="true"
+        android:background="@drawable/shape_edittext_word_green"
+        android:gravity="top"
+        android:hint="@string/hint_note"
+        android:inputType="none"
+        android:linksClickable="true"
+        android:padding="4dp"
+        android:singleLine="false"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

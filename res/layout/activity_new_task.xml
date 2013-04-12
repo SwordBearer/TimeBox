@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_gray" >
+
+    <LinearLayout
+        android:id="@+id/newtask_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/newtask_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newtask_tv_date"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:contentDescription="@null"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/newtask_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_save" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/newtask_head"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/newtask_edit_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/newtask_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_task_name"
+                    android:singleLine="true" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/newtask_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/str_task_detail"
+                    android:minLines="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newtask_level_and_plan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/newtask_level"
+                    style="@style/newtask_linearlayout"
+                    android:background="@drawable/selector_up_corner" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_level" />
+
+                    <TextView
+                        android:id="@+id/newtask_textview_level"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/str_not_setup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/newtask_plan"
+                    style="@style/newtask_linearlayout"
+                    android:background="@drawable/selector_bottom_corner" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_belong_plan" />
+
+                    <TextView
+                        android:id="@+id/newtask_textview_plan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/str_not_setup" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/newtask_btn_add_alarm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/selector_common_btn"
+                android:drawableLeft="@android:drawable/ic_menu_add"
+                android:text="@string/str_add_alarm" />
+
+            <ListView
+                android:id="@+id/newtask_alarmlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:descendantFocusability="blocksDescendants" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

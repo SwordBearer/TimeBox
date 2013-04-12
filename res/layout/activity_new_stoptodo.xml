@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/newstop_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/newstop_btn_back"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newstop_tv_date"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:contentDescription="@null"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/newstop_btn_save"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_save"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/newstop_btn_menu"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_menu" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newstop_detail_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:gravity="top"
+        android:hint="@string/str_stoptodo_detail"
+        android:minLines="4" />
+
+    <TextView
+        android:id="@+id/newstop_detail_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

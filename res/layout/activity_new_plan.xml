@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_gray" >
+
+    <LinearLayout
+        android:id="@+id/newplan_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_title"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/newplan_btn_back"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newplan_tv_date"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:contentDescription="@null"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/newplan_btn_save"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_title_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newplan_head"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <EditText
+            android:id="@+id/newplan_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="@string/str_plan_name"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/newplan_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:hint="@string/str_plan_detail"
+            android:minLines="10" />
+
+        <Button
+            android:id="@+id/newplan_btn_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/selector_common_btn"
+            android:text="@string/str_start_time" />
+    </LinearLayout>
+
+</RelativeLayout>

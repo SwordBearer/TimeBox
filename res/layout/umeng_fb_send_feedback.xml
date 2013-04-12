@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_fb_rootId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_title"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/umeng_fb_goback_btn"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/umeng_fb_conversation_title"
+            style="@style/title_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/UMFeedbackConversationTitle" />
+
+        <ImageButton
+            android:id="@+id/umeng_fb_see_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_title_btn"
+            android:src="@drawable/btn_feedback_list" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/umeng_fb_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="9dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="7dip"
+        android:layout_weight="1.0"
+        android:gravity="top"
+        android:hint="@string/UMFeedbackHint"
+        android:maxEms="10"
+        android:minEms="10"
+        android:paddingLeft="9dip"
+        android:paddingTop="10dip"
+        android:textColor="#737373" />
+
+    <TextView
+        android:id="@+id/umeng_fb_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/umeng_fb_submit_selector"
+        android:gravity="center"
+        android:text="@string/UMFeedbackSummit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

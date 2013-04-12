@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories">
+        <item>今&#160;&#160;&#160;&#160;&#160;&#160;&#160;日</item>
+        <item>明&#160;&#160;&#160;&#160;&#160;&#160;&#160;日 </item>
+        <item>本&#160;&#160;&#160;&#160;&#160;&#160;&#160;周 </item>
+        <item>所&#160;&#160;&#160;&#160;&#160;&#160;&#160;有</item>
+        <item>计&#160;&#160;&#160;&#160;&#160;&#160;&#160;划</item>
+        <item>每日语录</item>
+        <item>记&#160;&#160;事&#160;&#160;本</item>
+        <item>不&#160;&#160;该&#160;&#160;做</item>
+    </string-array>
+    <!--  -->
+    <string-array name="task_level">
+        <item>紧急</item>
+        <item>重要</item>
+        <item>一般</item>
+        <item>非必须</item>
+    </string-array>
+    <!--  -->
+    <string-array name="titles">
+        <item>今日任务</item>
+        <item>明日任务</item>
+        <item>本周安排</item>
+        <item>所有任务</item>
+        <item>高瞻远瞩</item>
+        <item>出口成章</item>
+        <item>随手记录</item>
+        <item>严于律己</item>
+    </string-array>
+    <!--  -->
+    <string-array name="settings">
+        <item>数据统计</item>
+        <item>行为分析</item>
+        <item>账户管理</item>
+        <item>检查更新</item>
+        <item>开启全屏</item>
+        <item>闹钟推迟间隔</item>
+        <item>定时开关机</item>
+        <item>意见反馈</item>
+        <item>用户手册</item>
+        <item>关于软件</item>
+    </string-array>
+    <string-array name="detail_menu">
+        <item>分享</item>
+        <item>修改</item>
+        <item>删除</item>
+    </string-array>
+    <!--  -->
+
+</resources>

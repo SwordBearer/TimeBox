@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_popupwindow"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/mood_btn_green"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0f0"
+        android:text="@string/mood_green" />
+
+    <Button
+        android:id="@+id/mood_btn_red"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f00"
+        android:text="@string/mood_red" />
+
+    <Button
+        android:id="@+id/mood_btn_yellow"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ff0"
+        android:text="@string/mood_yellow" />
+
+    <Button
+        android:id="@+id/mood_btn_pink"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FF3E96"
+        android:text="@string/mood_pink" />
+
+    <Button
+        android:id="@+id/mood_btn_blue"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00BFFF"
+        android:text="@string/mood_blue" />
+
+    <Button
+        android:id="@+id/mood_btn_gray"
+        style="@style/mood_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#c0c0c0"
+        android:text="@string/mood_gray" />
+
+</LinearLayout>

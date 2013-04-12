@@ -1,0 +1,86 @@
+<sequence-diagram version="1.0.11" icons="true">  
+  <object id="1" language="java" name="xmu.swordbearer.timebox.NewNoteActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewNoteActivity.java" binary="false" label="newNoteActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="273" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="xmu.swordbearer.timebox.NewPlanActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewPlanActivity.java" binary="false" label="newPlanActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="180" y="0"/>  
+  </object>  
+  <object id="3" language="java" name="xmu.swordbearer.timebox.Login" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/Login.java" binary="false" label="login" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="267" y="0"/>  
+  </object>  
+  <object id="4" language="java" name="xmu.swordbearer.timebox.helpActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/helpActivity.java" binary="false" label="helpActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="232" y="0"/>  
+  </object>  
+  <object id="5" language="java" name="xmu.swordbearer.timebox.MainActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/MainActivity.java" binary="false" label="mainActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="6" language="java" name="xmu.swordbearer.timebox.MainActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/MainActivity.java" binary="false" label="mainActivity1" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="540" y="0"/>  
+  </object>  
+  <object id="7" language="java" name="xmu.swordbearer.timebox.MainActivity.UpdateListReceiver" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/MainActivity.java" binary="false" label="updateListReceiver" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="8" language="java" name="xmu.swordbearer.timebox.NewNoteActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewNoteActivity.java" binary="false" label="newNoteActivity1" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="9" language="java" name="xmu.swordbearer.timebox.NewPlanActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewPlanActivity.java" binary="false" label="newPlanActivity1" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="10" language="java" name="xmu.swordbearer.timebox.NewStopToDoActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewStopToDoActivity.java" binary="false" label="newStopToDoActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="11" language="java" name="xmu.swordbearer.timebox.NewTaskActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewTaskActivity.java" binary="false" label="newTaskActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="12" language="java" name="xmu.swordbearer.timebox.NewWordActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/NewWordActivity.java" binary="false" label="newWordActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="13" language="java" name="xmu.swordbearer.timebox.PlanDetailActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/PlanDetailActivity.java" binary="false" label="planDetailActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="14" language="java" name="xmu.swordbearer.timebox.SetupActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/SetupActivity.java" binary="false" label="setupActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="15" language="java" name="xmu.swordbearer.timebox.StartActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/StartActivity.java" binary="false" label="startActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="16" language="java" name="xmu.swordbearer.timebox.TaskDetailActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/TaskDetailActivity.java" binary="false" label="taskDetailActivity" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>  
+  <object id="17" language="java" name="xmu.swordbearer.timebox.ToolsActivity" project="TimeBox0.6" 
+    file="/TimeBox0.6/src/xmu/swordbearer/timebox/ToolsActivity.java" binary="false" label="toolsActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="446" y="0"/>  
+  </object>
+</sequence-diagram>

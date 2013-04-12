@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_alarmview"
+    android:clickable="true" >
+
+    <CheckBox
+        android:id="@+id/alarmlist_child__onoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@android:drawable/btn_star" />
+
+    <TextView
+        android:id="@+id/alarmlist_child_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alarmlist_child__onoff"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/alarmlist_child_repeat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmlist_child_time"
+        android:layout_toRightOf="@id/alarmlist_child__onoff"
+        android:textSize="12sp" />
+
+</RelativeLayout>
