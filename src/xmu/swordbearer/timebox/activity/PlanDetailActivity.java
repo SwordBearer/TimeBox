@@ -37,8 +37,7 @@ import android.widget.Toast;
 
 import com.umeng.analytics.MobclickAgent;
 
-public class PlanDetailActivity extends FragmentActivity implements
-		PlanTaskListAdapter.OnItemChangedListener, OnClickListener {
+public class PlanDetailActivity extends FragmentActivity implements PlanTaskListAdapter.OnItemChangedListener, OnClickListener {
 	String TAG = "PlanDetail";
 
 	private TextView nameTextView;
@@ -72,8 +71,7 @@ public class PlanDetailActivity extends FragmentActivity implements
 		btnMenu.setOnClickListener(this);
 		btnAddTask.setOnClickListener(this);
 		taskListView.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				showTaskDetail(position);
 			}
 		});
@@ -87,8 +85,7 @@ public class PlanDetailActivity extends FragmentActivity implements
 			finish();
 			return;
 		}
-		Cursor cursor = DataHandler.queryById(this, DBAdapter.PLAN_TABLE,
-				planId);
+		Cursor cursor = DataHandler.queryById(this, DBAdapter.PLAN_TABLE, planId);
 		plan = new Plan(cursor);
 		nameTextView.setText(plan.name);
 		createTimeTextView.setText(plan.startTime);
@@ -103,14 +100,11 @@ public class PlanDetailActivity extends FragmentActivity implements
 	private void showPopupMenu() {
 		final PopupMenu popupMenu = new PopupMenu(this);
 		String[] items = getResources().getStringArray(R.array.detail_menu);
-		int[] icons = { R.drawable.btn_share, R.drawable.btn_edit,
-				R.drawable.btn_delete };
-		popupMenu.setWindow(icons, items, R.layout.list_child_popup_menu,
-				R.drawable.bg_popwindow_menu, btnMenu.getWidth() * 2,
+		int[] icons = { R.drawable.btn_share, R.drawable.btn_edit, R.drawable.btn_delete };
+		popupMenu.setWindow(icons, items, R.layout.list_child_popup_menu, R.drawable.bg_popwindow_menu, btnMenu.getWidth() * 2,
 				LayoutParams.WRAP_CONTENT);
 		popupMenu.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> arg0, View arg1,
-					int position, long arg3) {
+			public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 				switch (position) {
 				case 0:// share
 					break;
@@ -158,8 +152,7 @@ public class PlanDetailActivity extends FragmentActivity implements
 			Toast.makeText(this, "暂时没有任务", Toast.LENGTH_SHORT).show();
 			return;
 		}
-		final ArrayList<Map<String, Object>> taskList = new ArrayList<Map<String, Object>>(
-				count);
+		final ArrayList<Map<String, Object>> taskList = new ArrayList<Map<String, Object>>(count);
 		HashMap<String, Object> map = null;
 		if (cursor.moveToFirst()) {
 			do {// 这样写防止第一条被跳过
@@ -170,62 +163,52 @@ public class PlanDetailActivity extends FragmentActivity implements
 			} while (cursor.moveToNext());
 		}
 		cursor.close();
-		SimpleAdapter adapter = new SimpleAdapter(this, taskList,
-				android.R.layout.simple_list_item_multiple_choice,
-				new String[] { TaskColumns.TASK_NAME },
-				new int[] { android.R.id.text1 });
+		SimpleAdapter adapter = new SimpleAdapter(this, taskList, android.R.layout.simple_list_item_multiple_choice,
+				new String[] { TaskColumns.TASK_NAME }, new int[] { android.R.id.text1 });
 		lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 		lv.setAdapter(adapter);
 
 		builder.setTitle("选择任务");
 		builder.setView(lv);
-		builder.setPositiveButton(R.string.str_confirm,
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						long[] ids = lv.getCheckItemIds();
-						ContentValues values = new ContentValues();
-						values.put(TaskColumns.TASK_PLAN_ID, plan.id);
-						for (int i = 0; i < ids.length; i++) {
-							int selectedTaskId = (Integer) taskList.get(
-									(int) ids[i]).get(TaskColumns._ID);
-							DataHandler.updateTask(PlanDetailActivity.this,
-									selectedTaskId, values);
-						}
-						updateTaskList();
-					}
-				});
+		builder.setPositiveButton(R.string.str_confirm, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				long[] ids = lv.getCheckItemIds();
+				ContentValues values = new ContentValues();
+				values.put(TaskColumns.TASK_PLAN_ID, plan.id);
+				for (int i = 0; i < ids.length; i++) {
+					int selectedTaskId = (Integer) taskList.get((int) ids[i]).get(TaskColumns._ID);
+					DataHandler.updateTask(PlanDetailActivity.this, selectedTaskId, values);
+				}
+				updateTaskList();
+			}
+		});
 
 		builder.setNegativeButton(R.string.str_cancel, null);
 		builder.show();
 	}
 
 	private void deletePlan() {
-		AlertDialog.Builder builder = new AlertDialog.Builder(
-				PlanDetailActivity.this);
+		AlertDialog.Builder builder = new AlertDialog.Builder(PlanDetailActivity.this);
 		builder.setTitle(R.string.str_delete_plan);
 		builder.setMessage(R.string.str_delete_plan_msg);
-		builder.setPositiveButton(R.string.str_confirm,
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface arg0, int arg1) {
-						DBAdapter dbAdapter = new DBAdapter(
-								PlanDetailActivity.this);
-						dbAdapter.open();
-						if (!dbAdapter.delete(DBAdapter.PLAN_TABLE, plan.id)) {
-							Toast.makeText(PlanDetailActivity.this,
-									"计划删除失败!!!", Toast.LENGTH_LONG).show();
-							return;
-						}
-						Cursor taskCursor = DataHandler.getPlanTask(dbAdapter,
-								plan.id);
-						ContentValues values = new ContentValues();
-						values.put(TaskColumns.TASK_PLAN_ID, -1);
-						DataHandler.updateTasks(dbAdapter, taskCursor, values);
-						dbAdapter.close();
-						UiUtils.updateMainList(PlanDetailActivity.this);
-						finish();
+		builder.setPositiveButton(R.string.str_confirm, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface arg0, int arg1) {
+				DBAdapter dbAdapter = new DBAdapter(PlanDetailActivity.this);
+				dbAdapter.open();
+				if (!dbAdapter.delete(DBAdapter.PLAN_TABLE, plan.id)) {
+					Toast.makeText(PlanDetailActivity.this, "计划删除失败!!!", Toast.LENGTH_LONG).show();
+					return;
+				}
+				Cursor taskCursor = DataHandler.getPlanTask(dbAdapter, plan.id);
+				ContentValues values = new ContentValues();
+				values.put(TaskColumns.TASK_PLAN_ID, -1);
+				DataHandler.updateTasks(dbAdapter, taskCursor, values);
+				dbAdapter.close();
+				UiUtils.updateMainList(PlanDetailActivity.this);
+				finish();
 
-					}
-				});
+			}
+		});
 		builder.setNegativeButton(R.string.str_cancel, null);
 		builder.show();
 

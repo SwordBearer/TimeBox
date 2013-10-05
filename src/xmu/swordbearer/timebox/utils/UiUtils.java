@@ -20,10 +20,8 @@ public class UiUtils {
 	 * @param activity
 	 */
 	public static void showInFullscreen(Activity activity) {
-		SharedPreferences prefs = activity.getSharedPreferences(
-				CommonVar.PREF_FULLSCREEN, Context.MODE_PRIVATE);
-		boolean isFullscreen = prefs
-				.getBoolean(CommonVar.KEY_FULLSCREEN, false);
+		SharedPreferences prefs = activity.getSharedPreferences(CommonVar.PREF_FULLSCREEN, Context.MODE_PRIVATE);
+		boolean isFullscreen = prefs.getBoolean(CommonVar.KEY_FULLSCREEN, false);
 		if (isFullscreen) {
 			int flag = WindowManager.LayoutParams.FLAG_FULLSCREEN;
 			activity.getWindow().setFlags(flag, flag);

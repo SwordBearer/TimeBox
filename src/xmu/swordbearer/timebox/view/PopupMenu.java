@@ -32,8 +32,7 @@ public class PopupMenu extends PopupWindow {
 	 * @param width菜单宽度
 	 * @param height菜单高度
 	 */
-	public void setWindow(int[] icons, String[] items, int itemLayoutId,
-			int bgDrawableId, int width, int height) {
+	public void setWindow(int[] icons, String[] items, int itemLayoutId, int bgDrawableId, int width, int height) {
 		CustomMenuAdapter adapter = new CustomMenuAdapter(context, icons, items);
 		lv.setAdapter(adapter);
 		setContentView(lv);
@@ -80,10 +79,8 @@ public class PopupMenu extends PopupWindow {
 		public View getView(int position, View convertView, ViewGroup parent) {
 			MenuItemView itemView = new MenuItemView();
 			convertView = inflate.inflate(R.layout.list_child_popup_menu, null);
-			itemView.iconView = (ImageView) convertView
-					.findViewById(R.id.menu_item_img);
-			itemView.textView = (TextView) convertView
-					.findViewById(R.id.menu_item_text);
+			itemView.iconView = (ImageView) convertView.findViewById(R.id.menu_item_img);
+			itemView.textView = (TextView) convertView.findViewById(R.id.menu_item_text);
 			if (icons != null) {
 				itemView.iconView.setImageResource(icons[position]);
 			}

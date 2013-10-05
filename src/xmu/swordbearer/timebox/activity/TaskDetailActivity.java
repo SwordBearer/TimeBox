@@ -64,8 +64,8 @@ public class TaskDetailActivity extends FragmentActivity implements
 		}
 		btnBack = (ImageButton) findViewById(R.id.taskdetail_btn_back);
 		btnMenu = (ImageButton) findViewById(R.id.taskdetail_btn_menu);
-		btnPrev = (Button) findViewById(R.id.taskdetail_btn_previous);
-		btnNext = (Button) findViewById(R.id.taskdetail_btn_next);
+		btnPrev = (Button) findViewById(R.id.btn_previous);
+		btnNext = (Button) findViewById(R.id.btn_next);
 
 		btnBack.setOnClickListener(this);
 		btnMenu.setOnClickListener(this);

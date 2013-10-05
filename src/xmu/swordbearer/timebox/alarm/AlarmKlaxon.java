@@ -85,7 +85,6 @@ public class AlarmKlaxon extends Service {
 				stopSelf();
 			}
 		}
-
 	};
 
 	private OnAudioFocusChangeListener onAudioFocusChangeListener = new OnAudioFocusChangeListener() {

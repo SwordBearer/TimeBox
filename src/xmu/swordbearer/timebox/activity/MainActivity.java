@@ -155,8 +155,7 @@ public class MainActivity extends FragmentActivity implements
 
 	public void onClick(View v) {
 		if (v == btnSetting) {
-			Intent intent = new Intent(MainActivity.this,
-					SettingsActivity.class);
+			Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
 			startActivity(intent);
 		} else if (v == btnAdd) {
 			goToNewActivity();
